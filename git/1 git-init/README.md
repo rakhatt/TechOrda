@@ -44,4 +44,8 @@ P.S.
 
 - Красивый вывод логов `git log --all --decorate --oneline --graph`
 
+ОТВЕТ
+https://github.com/rakhatt/jusan-git/tree/48c259f9266a78c81c8ab7fbd1e04398797f0d3f
+
+
 [Рецензия](./REVIEW.md)
