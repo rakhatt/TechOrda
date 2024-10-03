@@ -16,5 +16,5 @@
 ### ОТВЕТ 
 
 ```
-https://github.com/rakhatt/jusan-git/blob/a4ee8feb1dd097950aef4e0581e2630d826fe6c0/README.md
+https://github.com/rakhatt/jusan-git/blob/a4ee8feb1dd097950aef4e0581e2630d826fe6c0
 ```
