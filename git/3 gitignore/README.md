@@ -35,3 +35,11 @@ https://github.com/username/jusan-git/tree/5a1e0d9c4c864e13f0682bec96a9f19786fad
 ```
 temp
 ```
+
+
+### ОТВЕТ
+
+```
+https://github.com/rakhatt/jusan-git/tree/1ad61ed0f79bc78af1e230222ffd170e7a9c1149
+```
+
