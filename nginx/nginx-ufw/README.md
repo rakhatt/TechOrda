@@ -20,3 +20,21 @@
 ---
 
 ### Ответ
+sudo apt install ufw -y
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw default deny incoming
+sudo ufw enable
+sudo ufw status
+
+ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+80/tcp                     ALLOW       Anywhere
+443/tcp                    ALLOW       Anywhere
+80/tcp (v6)                ALLOW       Anywhere (v6)
+443/tcp (v6)               ALLOW       Anywhere (v6)
+
+

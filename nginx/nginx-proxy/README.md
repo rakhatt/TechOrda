@@ -35,3 +35,34 @@ web-server: 0
 ---
 
 ### Ответ
+запустим наш IP по порту 9090
+```bash
+uvicorn main:app --reload --port 9090 
+```
+приводим наш конфиг nginx conf.d/default.conf в следующий вид
+server {
+    listen 80;
+    server_name example.com;
+
+    location / {
+        root /path/to/your/directory;
+        index index.html;
+    }
+
+    location /api {
+        proxy_pass http://localhost:9090;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        rewrite ^/api/?(.*)$ /$1 break;
+    }
+}
+
+проверяем 
+```bash
+url http://localhost:8080/api/
+{"Hello":"World"}root@DESKTOP-8CKU5JA:/etc/nginx#
+```
+
